@@ -15,7 +15,7 @@ namespace CRUD_LFRZ1.Controllers
     public class EmployeeController : Controller
     {
         private EmployeeEntities db = new EmployeeEntities();
-
+        
         // GET: Employee. Add PeagedListMVc in nugget
         public ActionResult Index(string searchBy, string search, int? page, string sortBy)
         {

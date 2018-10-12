@@ -63,7 +63,9 @@
                         @Html.DisplayFor(modelItem => item.Deparment.Name)
                     </td>
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId }) |
+                        <a href="~/Employee/Edit/@item.EmployeeId" title="Edit">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </a> |
                         @Html.ActionLink("Details", "Details", new { id = item.EmployeeId }) |
                         @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId })
                     </td>
